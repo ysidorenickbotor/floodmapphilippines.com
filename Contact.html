@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.css" />
+  <link rel="icon" href="images.png" type="image/png">
+  <title>Flood Prediction PH</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mapping.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+</head>
+
+<style>
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888; 
+    }
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+    }
+</style>
+
+<body class="home">
+  <ul class = "home">
+    <img src="Floodmap.jpg" class="head-img" href="Website.html">
+    <li>COMPUTER-SCIENCE.com</li>
+    <li><a class="fa fa-home" href="Website.html"> Home </a></li>
+    <li><a class="fa fa-phone" href="Contact.html"> Contact</a></li>
+    <li><a class="fa fa-info" href="About.html"> About </a></li> 
+    <a class="fa fa-user-circle fa-2x" style="margin-left: 710px; margin-top: 5px; padding-left: 7px; cursor: pointer" onclick="openForm()"></a>
+  
+    <button class="button" onclick="openForm()">Login </button>
+    <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+      
+
+      <li><label for="email"><b>Email</b></label></li>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <li><label for="psw"><b>Password</b></label></li>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit" class="btn">Login</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+  </ul>
+
+  <ul class = "home1">
+    <img src="logo.png" class="cspc">
+    <div class="dropdown">
+      <button class="dropbtn1">MORE 
+      <i class="fa fa-caret-down"></i>
+      </button>
+  
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn1">MORE 
+      <i class="fa fa-caret-down"></i>
+      </button>
+     
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn1">MORE 
+      <i class="fa fa-caret-down"></i>
+      </button>
+     
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn1">MORE 
+      <i class="fa fa-caret-down"></i>
+      </button>
+     
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn1">MORE 
+      <i class="fa fa-caret-down"></i>
+      </button>
+      
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn1">MORE 
+      <i class="fa fa-caret-down"></i>
+      </button>
+      
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn1">MORE 
+      <i class="fa fa-caret-down"></i>
+      </button>
+      
+    </div>
+   
+
+    <aside style="height: 86px; width:253px; background-color: white; border: 2px solid blue; float: right;margin-right: 20px; margin-top: -3px">
+    <div style="text-align:center; margin-top: -36px; padding:1em 0;"><h3><a style="text-decoration:none;"><span style="color:black; font-size: 16px">Philippine Standard Time</span></h3> <iframe style="margin-top: -30px;"src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Asia%2FManila" width="100%" height="90" frameborder="0" seamless ></iframe> </div>
+    </aside>
+  </ul>
+
+  <br><br><br><br><br><br><br><br>
+  <div class ="paaa">
+    <b><p class = "p">Contact</p></b>
+  </div>
+
+  <div class="nicklaman">
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <b><p class ="nickkk">Name</p></b>
+    <p class ="nickkk">Ysidore Nick Botor</p>
+    <br>
+    <b><p class ="nickkk">Birthdate</p></b>
+    <p class ="nickkk">October 12, 1999</p>
+    <br>
+    <b><p class ="nickkk">Sex</p></b>
+    <p class ="nickkk">Male</p>
+    <br>
+    <b><p class ="nickkk">Address</p></b>
+    <p class ="nickkk">Zone 1, Qui-Opos Street San Juan, Baao Camarines Sur, Philippines</p>
+    <br>
+    <b><p class ="nickkk">Status</p></b>
+    <p class ="nickkk">Single</p>
+    <br>
+    <b><p class ="nickkk">Educational Attainment:</p></b>
+    <b><p class ="nickkk">Elementary</p></b>
+    <b><p class ="nickkk">Junior High School</p></b>
+    <b><p class ="nickkk">Senior High School</p></b>
+    <b><p class ="nickkk">Tertiary</p></b>
+    <div class="nicklaman1">
+    <p class ="nickkk">Baao Central School</p>
+    <p class ="nickkk">Baao National High School</p>
+    <p class ="nickkk">Baao National High School</p>
+    <p class ="nickkk">Camarines Sur Polytechnic Colleges</p>
+    </div>
+    <div class="nicklaman2">
+    <b><p class ="nickkk">Email Address</p></b>
+    <p class ="nickkk"><i class="fa fa-envelope" style="font-size:17px"></i>ysidorenickbotor@gmail.com</p>
+    <br>
+    <b><p class ="nickkk">Phone Number</p></b>
+    <p class ="nickkk"><i class="fa fa-phone" style="font-size:18px"></i>09270186071</p>
+    <br>
+    
+    <b><p class ="nickkk">Facebook</p></b>
+    <p class ="nickkk"><i class="fa fa-facebook-square" style="font-size:18px"></i>Ysidore Nick Botor</p>
+    <br>
+    </div>
+
+    <div class="slideshow-container1">
+
+      <div class="mySlides1 fade1">
+      <img src="ysi.jpg" style="width:100%; height: 315px">
+      </div>
+
+      <div class="mySlides1 fade1">
+      <img src="nick2.jpg" style="width:100%; height: 315px">
+      </div>
+
+      <div class="mySlides1 fade1">
+      <img src="nick1.jpg" style="width:100%; height: 315px">
+      </div>
+    </div>
+    <br>
+
+    <div style="text-align:right; margin-right: 215px">
+      <span class="dot1" onclick="currentSlide1(1)"></span> 
+      <span class="dot1" onclick="currentSlide1(2)"></span> 
+      <span class="dot1" onclick="currentSlide1(3)"></span> 
+    </div>
+    <br><br><br>
+  </div>
+
+
+  <div class="nethlaman">
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <b><p class ="nickkk">Name</p></b>
+    <p class ="nickkk">Jieneth A. Ituralde</p>
+    <br>
+    <b><p class ="nickkk">Birthdate</p></b>
+    <p class ="nickkk">June 24, 1999</p>
+    <br>
+    <b><p class ="nickkk">Sex</p></b>
+    <p class ="nickkk">Female</p>
+    <br>
+    <b><p class ="nickkk">Address</p></b>
+    <p class ="nickkk">Zone 4, Ki-kiringgay Street Sto. Domingo, Nabua Camrines Sur, Philippines</p>
+    <br>
+    <b><p class ="nickkk">Status</p></b>
+    <p class ="nickkk">Single</p>
+    <br>
+    <b><p class ="nickkk">Educational Attainment:</p></b>
+    <b><p class ="nickkk">Elementary</p></b>
+    <b><p class ="nickkk">Junior High School</p></b>
+    <b><p class ="nickkk">Senior High School</p></b>
+    <b><p class ="nickkk">Tertiary</p></b>
+    <div class="nicklaman1">
+    <p class ="nickkk">Sto. Domingo Nabua Elementary School</p>
+    <p class ="nickkk">La Purisima National High School</p>
+    <p class ="nickkk">La Purisima National High School</p>
+    <p class ="nickkk">Camarines Sur Polytechnic Colleges</p>
+    </div>
+
+    <div class="nicklaman2">
+    <b><p class ="nickkk">Email Address</p></b>
+    <p class ="nickkk"><i class="fa fa-envelope" style="font-size:17px"></i>nethituralde@gmail.com</p>
+    <br>
+    <b><p class ="nickkk">Phone Number</p></b>
+    <p class ="nickkk"><i class="fa fa-phone" style="font-size:18px"></i>09121187204</p>
+    <br>
+    <b><p class ="nickkk">Facebook</p></b>
+    <p class ="nickkk"><i class="fa fa-facebook-square" style="font-size:18px"></i>Jieneth Alamo Ituralde</p>
+    <br>
+    </div>
+
+    <div class="slideshow-container2">
+
+      <div class="mySlides2 fade2">
+      <img src="neth1.jpg" style="width:100%; height: 350px">
+      </div>
+
+      <div class="mySlides2 fade2">
+      <img src="neth2.jpg" style="width:100%; height: 350px">
+      </div>
+
+      <div class="mySlides2 fade2">
+      <img src="neth3.jpeg" style="width:100%; height: 350px">
+      </div>
+    </div>
+    <br>
+
+    <div style="text-align:right; margin-right: 215px">
+      <span class="dot2" onclick="currentSlide2(1)"></span> 
+      <span class="dot2" onclick="currentSlide2(2)"></span> 
+      <span class="dot2" onclick="currentSlide2(3)"></span> 
+    </div>
+    
+  </div>
+
+
+  <div class="pollaman">
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <b><p class ="nickkk">Name</p></b>
+    <p class ="nickkk">John Paul O. Albao</p>
+    <br>
+    <b><p class ="nickkk">Birthdate</p></b>
+    <p class ="nickkk">February 2, 1999</p>
+    <br>
+    <b><p class ="nickkk">Sex</p></b>
+    <p class ="nickkk">Male</p>
+    <br>
+    <b><p class ="nickkk">Address</p></b>
+    <p class ="nickkk">Zone 4, San Mateo Street La Purisima, Nabua Camarines Sur, Philippines</p>
+    <br>
+    <b><p class ="nickkk">Status</p></b>
+    <p class ="nickkk">Single</p>
+    <br>
+    <b><p class ="nickkk">Educational Attainment:</p></b>
+    <b><p class ="nickkk">Elementary</p></b>
+    <b><p class ="nickkk">Junior High School</p></b>
+    <b><p class ="nickkk">Senior High School</p></b>
+    <b><p class ="nickkk">Tertiary</p></b>
+    <div class="nicklaman1">
+    <p class ="nickkk">Nabua West Central School</p>
+    <p class ="nickkk">La Purisima National High School</p>
+    <p class ="nickkk">La Purisima National High School</p>
+    <p class ="nickkk">Camarines Sur Polytechnic Colleges</p>
+    </div>
+
+    <div class="nicklaman2">
+    <b><p class ="nickkk">Email Address</p></b>
+    <p class ="nickkk"><i class="fa fa-envelope" style="font-size:17px"></i>albaonabora@gmail.com</p>
+    <br>
+    <b><p class ="nickkk">Phone Number</p></b>
+    <p class ="nickkk"><i class="fa fa-phone" style="font-size:18px"></i>09465208766</p>
+    <br>
+    <b><p class ="nickkk">Facebook</p></b>
+    <p class ="nickkk"><i class="fa fa-facebook-square" style="font-size:18px"></i>John Paul Albao</p>
+    <br>
+    </div>
+
+    <div class="slideshow-container3">
+
+      <div class="mySlides3 fade3">
+      <img src="jp1.jpg" style="width:100%; height: 350px">
+      </div>
+
+      <div class="mySlides3 fade3">
+      <img src="jp2.jpg" style="width:100%; height: 350px">
+      </div>
+
+      <div class="mySlides3 fade3">
+      <img src="jp3.jpg" style="width:100%; height: 350px">
+      </div>
+    </div>
+    <br>
+
+    <div style="text-align:right; margin-right: 215px">
+      <span class="dot3" onclick="currentSlide3(1)"></span> 
+      <span class="dot3" onclick="currentSlide3(2)"></span> 
+      <span class="dot3" onclick="currentSlide3(3)"></span> 
+    </div>
+    
+  </div>
+
+
+  <div class="gaslaman">
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <b><p class ="nickkk">Name</p></b>
+    <p class ="nickkk">Mark Joseph P. Gastilo</p>
+    <br>
+    <b><p class ="nickkk">Birthdate</p></b>
+    <p class ="nickkk">August 23, 1999</p>
+    <br>
+    <b><p class ="nickkk">Sex</p></b>
+    <p class ="nickkk">Male</p>
+    <br>
+    <b><p class ="nickkk">Address</p></b>
+    <p class ="nickkk">Zone 2, Sto Domingo Nabua Camarines Sur, Philippines</p>
+    <br>
+    <b><p class ="nickkk">Status</p></b>
+    <p class ="nickkk">Single</p>
+    <br>
+    <b><p class ="nickkk">Educational Attainment:</p></b>
+    <b><p class ="nickkk">Elementary</p></b>
+    <b><p class ="nickkk">Junior High School</p></b>
+    <b><p class ="nickkk">Senior High School</p></b>
+    <b><p class ="nickkk">Tertiary</p></b>
+    <div class="nicklaman1">
+    <p class ="nickkk">Nabua Central Pilot School</p>
+    <p class ="nickkk">Nabua National High School</p>
+    <p class ="nickkk">Nabua National High School</p>
+    <p class ="nickkk">Camarines Sur Polytechnic Colleges</p>
+    </div>
+
+    <div class="nicklaman2">
+    <b><p class ="nickkk">Email Address</p></b>
+    <p class ="nickkk"><i class="fa fa-envelope" style="font-size:17px"></i>mjgastilo23@gmail.com</p>
+    <br>
+    <b><p class ="nickkk">Phone Number</p></b>
+    <p class ="nickkk"><i class="fa fa-phone" style="font-size:18px"></i>09517016532</p>
+    <br>
+    <b><p class ="nickkk">Facebook</p></b>
+    <p class ="nickkk"><i class="fa fa-facebook-square" style="font-size:18px"></i>Marc Josef Gastilo</p>
+    <br>
+    </div>
+
+    <div class="slideshow-container4">
+
+      <div class="mySlides4 fade4">
+      <img src="gas1.jpg" style="width:100%; height: 350px">
+      </div>
+
+      <div class="mySlides4 fade4">
+      <img src="gas2.jpg" style="width:100%; height: 350px">
+      </div>
+
+      <div class="mySlides4 fade4">
+      <img src="gas3.jpg" style="width:100%; height: 350px">
+      </div>
+    </div>
+    <br>
+
+    <div style="text-align:right; margin-right: 215px">
+      <span class="dot4" onclick="currentSlide4(1)"></span> 
+      <span class="dot4" onclick="currentSlide4(2)"></span> 
+      <span class="dot4" onclick="currentSlide4(3)"></span> 
+    </div>
+  </div>
+
+
+
+  <script>
+    function openForm() {
+    document.getElementById("myForm").style.display = "block";
+    }
+    function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+    }
+  </script>
+  <script>
+    var slideIndex = 1;
+    showSlides1(slideIndex);
+
+    function plusSlides1(n) {
+    showSlides1(slideIndex += n);
+    }
+
+    function currentSlide1(n) {
+    showSlides1(slideIndex = n);
+    }
+
+    function showSlides1(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides1");
+      var dots = document.getElementsByClassName("dot1");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active1", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active1";
+    }
+  </script>
+  <script>
+    var slideIndex = 1;
+    showSlides2(slideIndex);
+
+    function plusSlides2(n) {
+    showSlides2(slideIndex += n);
+    }
+
+    function currentSlide2(n) {
+    showSlides2(slideIndex = n);
+    }
+
+    function showSlides2(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides2");
+      var dots = document.getElementsByClassName("dot2");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active2", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active2";
+    }
+  </script>
+  <script>
+    var slideIndex = 1;
+    showSlides3(slideIndex);
+
+    function plusSlides3(n) {
+    showSlides3(slideIndex += n);
+    }
+
+    function currentSlide3(n) {
+    showSlides3(slideIndex = n);
+    }
+
+    function showSlides3(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides3");
+      var dots = document.getElementsByClassName("dot3");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active3", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active3";
+    }
+  </script>
+  <script>
+    var slideIndex = 1;
+    showSlides4(slideIndex);
+
+    function plusSlides4(n) {
+    showSlides4(slideIndex += n);
+    }
+
+    function currentSlide4(n) {
+    showSlides4(slideIndex = n);
+    }
+
+    function showSlides4(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides4");
+      var dots = document.getElementsByClassName("dot4");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active4", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active4";
+    }
+  </script>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <footer>
+    <p class ="foot">Acknowledgement :D </p>
+    <p class ="foot">BSCS 4A Website 2021</p>
+  </footer>
+</body>
+</html>

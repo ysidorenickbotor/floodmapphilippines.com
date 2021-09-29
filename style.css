@@ -1,0 +1,531 @@
+body.home {
+  background-color: lightgrey;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5px 2px;
+}
+
+ul.home {
+  list-style-type: circle;
+  background-color:black ;
+  color:  white;
+  position: fixed; 
+  width: 100%;
+  height:  45px;
+  list-style-type: none;
+  padding: 6px 6px;
+  margin-left: -10px;
+  margin-top: -15px;
+}
+
+.head-img{
+  width: 130px;
+  height: 41px;  
+  float: left;
+  margin-left: 4px;
+  margin-top: 1px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.cspc{
+  width: 360px;
+  height: 80px;  
+  float: left;
+  margin-left: -1px;
+  padding: 1px 1px;
+  margin-top: 1px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: darkgrey;
+  padding: 6px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+ul li{
+  display: block;
+  color: white;
+  padding: 10px 10px;
+  text-decoration: none;
+  height: 12px; 
+}
+
+ul li a:hover{
+  cursor: pointer;
+  color: white;
+  padding: 6px 16px;
+}
+
+li b{
+  color: black;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-right: 35px;
+  margin-top: -35px;
+  border: none;
+  cursor: pointer;
+   float: right;
+   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 270px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+ul.home1 {
+  list-style-type: circle;
+  background-color:white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+  color:  white;
+  position: fixed; 
+  width: 100%;
+  list-style-type: none;
+  padding: 5px 6px;
+  margin-left: -10px;
+  margin-top: 40px;
+  height:  84px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown .dropbtn1 {
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  color: black;
+  padding: 7px 33px;
+  background-color: inherit;
+  font-family: inherit;  
+  margin-top: 22px;
+}
+
+.dropdown:hover .dropbtn1 {
+  background-color: royalblue;
+  color: white;
+}
+
+.dropdown-content {
+  border-radius: 4px;
+  display: none;
+  
+  position: fixed;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+
+.dropdown-content a {
+  float: none;
+  font-size: 13px;
+  color: black;
+  padding: 8px 8px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+footer {
+  background-color: black;
+  padding: 10px; 
+  color: whitesmoke;
+  margin-bottom: -13px;
+  width: 100%;
+  margin-left: -10px;
+}
+.foot {  
+    text-align: center;
+    font-size: 12px;
+}
+
+p.p {
+  background-color:  royalblue;
+  border-radius: 5px;
+  color: antiquewhite;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 26px;
+  text-align: center;
+  padding: 15px 20px;
+  width: 80%;
+  height: 23px;
+  margin-left: 120px;
+}
+p.nickkk {
+  margin-left: 25px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height:.5;
+  color: #333;
+  text-align: left;
+  padding: 0px  20px;
+
+}
+
+div.nicklaman{
+  padding: 2px 0px;
+  background-color: whitesmoke;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+  float: center;
+  color: blue;
+  width: 70%;
+  margin-left: 220px;
+  margin-top: -11px;
+  line-height:.1;
+  height:450px;
+}
+
+div.nicklaman1{
+  padding: 2px 0px;
+  background-color: none; 
+  float: center;
+  color: black;
+  width: 40%;
+  margin-left: 220px;
+  margin-top: -95px;
+  line-height:.1;
+  height:500px;
+}
+
+div.nicklaman2{
+  padding: 2px 0px;
+  background-color: none;
+  float: center;
+  color: black;
+  width: 30%;
+  margin-left: 270px;
+  margin-top: -813px;
+  line-height:.1;
+  height:500px;
+}
+
+div.nethlaman{
+  padding: 2px 0px;
+  background-color: whitesmoke;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+  float: center;
+  color: blue;
+  width: 70%;
+  margin-left: 220px;
+  margin-top: 20px;
+  line-height:.1;
+  height:500px;
+}
+div.pollaman{
+  padding: 2px 0px;
+  background-color: whitesmoke;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+  float: center;
+  color: blue;
+  width: 70%;
+  margin-left: 220px;
+  margin-top: 20px;
+  line-height:.1;
+  height:500px;
+}
+
+div.gaslaman{
+  padding: 2px 0px;
+  background-color: whitesmoke;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+  float: center;
+  color: blue;
+  width: 70%;
+  margin-left: 220px;
+  margin-top: 20px;
+  line-height:.1;
+  height:500px;
+}
+
+
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container1 {
+  width: 30%;
+  height: 70%;
+  background-color: grey;
+  
+  margin-left: 650px;
+  margin-top: -470px;
+}
+
+/* Slideshow container */
+.slideshow-container2 {
+  width: 30%;
+  height: 70%;
+  background-color: grey;
+  
+  margin-left: 650px;
+  margin-top: -470px;
+}
+
+/* Slideshow container */
+.slideshow-container3 {
+  width: 30%;
+  height: 70%;
+  background-color: grey;
+  
+  margin-left: 650px;
+  margin-top: -470px;
+}
+/* Slideshow container */
+.slideshow-container4 {
+  width: 30%;
+  height: 70%;
+  background-color: grey;
+  
+  margin-left: 650px;
+  margin-top: -470px;
+}
+
+
+/* The dots/bullets/indicators */
+.dot1 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot2 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot3 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dot4 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active1, .dot1:hover {
+  background-color: #717171;
+}
+.active2, .dot2:hover {
+  background-color: #717171;
+}
+.active3, .dot3:hover {
+  background-color: #717171;
+}
+.active4, .dot4:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade1 {
+  -webkit-animation-name: fade1;
+  -webkit-animation-duration: 1.0s;
+  animation-name: fade1;
+  animation-duration: .6s;
+}
+
+@-webkit-keyframes fade1 {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade1 {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+.fade2 {
+  -webkit-animation-name: fade2;
+  -webkit-animation-duration: 1.0s;
+  animation-name: fade2;
+  animation-duration: .6s;
+}
+
+@-webkit-keyframes fade2 {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade2 {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.fade3 {
+  -webkit-animation-name: fade3;
+  -webkit-animation-duration: 1.0s;
+  animation-name: fade3;
+  animation-duration: .6s;
+}
+
+@-webkit-keyframes fade3 {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade3 {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.fade4 {
+  -webkit-animation-name: fade4;
+  -webkit-animation-duration: 1.0s;
+  animation-name: fade4;
+  animation-duration: .6s;
+}
+
+@-webkit-keyframes fade4 {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade4 {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.about{
+  background-color: whitesmoke;
+  margin-left: 240px;
+  margin-top: -10px;
+  width: 1000px;
+  height:90%;
+}
+p.intro{
+  margin-left: 7px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 25px;
+  line-height:.5;
+  color: #333;
+  text-align: left;
+  padding: 20px  20px;
+}
+p.introduction{
+  text-align: justify;
+  text-justify: inter-word;
+  margin-left: 20px;
+  margin-top: -25px;
+  width: 910px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height:1.5;
+  color: #333;
+  padding: 10px  20px;
+}
+
+p.back{
+  margin-left: 7px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 25px;
+  line-height:.5;
+  color: #333;
+  text-align: left;
+  padding: 20px  20px;
+}
+p.background{
+  text-align: justify;
+  text-justify: inter-word;
+  margin-left: 20px;
+  margin-top: -29px;
+  width: 910px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height:1.5;
+  color: #333;
+  padding: 10px  20px;
+}     

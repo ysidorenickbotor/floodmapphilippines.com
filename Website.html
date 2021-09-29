@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.css" />
+  <link rel="icon" href="images.png" type="image/png">
+  <title>Flood Prediction PH</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mapping.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+</head>
+
+<style>
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888; 
+    }
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+    }
+</style>
+
+<body class="home">
+	<ul class = "home">
+    <img src="Floodmap.jpg" class="head-img" href="Website.html">
+    <li>COMPUTER-SCIENCE.com</li>
+    <li><a class="fa fa-home" href="Website.html"> Home </a></li>
+    <li><a class="fa fa-phone" href="Contact.html"> Contact</a></li>
+    <li><a class="fa fa-info" href="About.html"> About </a></li> 
+    <a class="fa fa-user-circle fa-2x" style="margin-left: 710px; margin-top: 5px; padding-left: 7px; cursor: pointer" onclick="openForm()"></a>
+  
+    <button class="button" onclick="openForm()">Login </button>
+    <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+      
+
+      <li><label for="email"><b>Email</b></label></li>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <li><label for="psw"><b>Password</b></label></li>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit" class="btn">Login</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+  </ul>
+
+  <ul class = "home1">
+    <img src="logo.png" class="cspc">
+    <div class="dropdown">
+      <button class="dropbtn1">MORE 
+      <i class="fa fa-caret-down"></i>
+      </button>
+      
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn1">MORE 
+      <i class="fa fa-caret-down"></i>
+      </button>
+      
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn1">MORE 
+      <i class="fa fa-caret-down"></i>
+      </button>
+      
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn1">MORE 
+      <i class="fa fa-caret-down"></i>
+      </button>
+     
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn1">MORE 
+      <i class="fa fa-caret-down"></i>
+      </button>
+      
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn1">MORE 
+      <i class="fa fa-caret-down"></i>
+      </button>
+      
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn1">MORE 
+      <i class="fa fa-caret-down"></i>
+      </button>
+      
+    </div> 
+    
+    <aside style="height: 86px; width:253px; background-color: white; border: 2px solid blue; float: right;margin-right: 20px; margin-top: -3px">
+    <div style="text-align:center; margin-top: -36px; padding:1em 0;"><h3><a style="text-decoration:none;"><span style="color:black; font-size: 16px">Philippine Standard Time</span></h3> <iframe style="margin-top: -30px;"src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Asia%2FManila" width="100%" height="90" frameborder="0" seamless ></iframe> </div>
+    </aside>
+  </ul>
+  <br><br><br><br><br><br><br><br><br>
+  <aside class="aside">
+    <div class="head">
+      <p class="update">Floods Updated</p>
+        <form class="example" action="" style="margin-left:211px; margin-top: -80px">
+          <input type="text" placeholder="Search Station" name="search2">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+  </aside>
+  <div class="box">
+    <div class="zoom_outer">
+      <div id="zoom">
+        <img src="map.jpg">
+        <div class="marker1">
+          <button class="ITBAYAT-BATANES">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="BASCO-BATANES">
+           <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="CALAYAN-CAGAYAN">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="APARRI-CAGAYAN">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          
+          <button class="TUGUEGARAO-CAGAYAN">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="CASIGURAN-AURORA">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="BALER-AURORA">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="CABANATUAN-NUEVAECIJA">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="CLARKAIRPORT-PAMPAMGA">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="SCIENCEGARDEN-QUEZONCITY">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="SANGLEYPOINT-CAVITE">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="ROMBLON-ROMBLON">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="CATBALOGAN-WESTERNSAMAR">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="CUYO-PALAWAN">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="DAUIS-BOHOL">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="HINATUAN-SURIGAODELSUR">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="GENERALSANTOS-STCOTABATO">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+        </div>
+
+        <div class="marker2">
+          <button class="LAOAGCITY-ILOCOSNORTE">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="SINAIT-ILOCOSSUR">
+            <i class="fa fa-map-marker" ></i> 
+          </button>  
+          <button class="SUBICBAY-OLONGAPO">
+            <i class="fa fa-map-marker" ></i> 
+          </button> 
+          <button class="PORTAREA-MANILA">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="AMBULONG-BATANGAS">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="VIRAC-CATANDUANES">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="CATARMAN-NORTHERNSAMAR">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="BORONGAN-EASTERNSAMAR">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="MACTANAIRPORT-CEBU">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="DUMAGUETECITY-NEGROSOR">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="MALAYBALAY-BUKIDNON">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+        </div>
+
+        <div class="marker3">
+          <button class="BAGUIOCITY-BENGUET">
+            <i class="fa fa-map-marker" ></i> 
+          </button>  
+          <button class="DAGUPANCITY-PANGASINAN">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="IBA-ZAMBALES">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="INFANTA-QUEZON">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="NAIA-PASAYCITY">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="CALAPAN-ORIENTALMINDORO">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="MASBATE-MASBATE">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="ROXASCITY-CAPIZ">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="MAASIN-SOUTHERNLEYTE">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="BUTUANCITY-AGUSANDELNORTE">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="COTABATOCITY-MAGUINDANAO">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+        </div>
+
+        <div class="marker4">
+          <button class="TANAY-RIZAL">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="ALABAT-QUEZON">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="LEGASPICITY-ALBAY">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="SANJOSE-MINDORO">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="TACLOBANCITY-LEYTE ">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="SURIGAO-SURIGAODELNORTE ">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="DIPOLOG-ZAMBOANGADELNORTE ">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="DAVAOCITY-DAVAODELSUR ">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+        </div>
+
+        <div class="marker5">
+          <button class="DAET-CAMARINESNORTE">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="TAYABAS-QUEZON">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="JUBAN-SORSOGON">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="CORON-PALAWAN">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="GUIUAN-EASTERNSAMAR">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="PUERTOPRINCESA-PALAWAN">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class="ELSALVADORCITY-MISAMISOR">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+          <button class=" ZAMBOANGA-ZAMBOANGADELSUR">
+            <i class="fa fa-map-marker" ></i> 
+          </button>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+ 
+  
+  <script>
+    function openForm() {
+    document.getElementById("myForm").style.display = "block";
+    }
+    function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+    }
+  </script>
+  <script>
+      var scale = 1,
+        panning = false,
+        pointX = 0,
+        pointY = 0,
+        start = { x: 0, y: 0 },
+        zoom = document.getElementById("zoom");
+
+      function setTransform() {
+        zoom.style.transform = "translate(" + pointX + "px, " + pointY + "px) scale(" + scale + ")";
+      }
+
+      zoom.onmousedown = function (e) {
+        e.preventDefault();
+        start = { x: e.clientX - pointX, y: e.clientY - pointY };
+        panning = true;
+      }
+
+      zoom.onmouseup = function (e) {
+        panning = false;
+      }
+
+      zoom.onmousemove = function (e) {
+        e.preventDefault();
+        if (!panning) {
+          return;
+        }
+        pointX = (e.clientX - start.x);
+        pointY = (e.clientY - start.y);
+        setTransform();
+      }
+
+      zoom.onwheel = function (e) {
+        e.preventDefault();
+        var xs = (e.clientX - pointX) / scale,
+          ys = (e.clientY - pointY) / scale,
+          delta = (e.wheelDelta ? e.wheelDelta : -e.deltaY);
+        (delta > 0) ? (scale *= 1.2) : (scale /= 1.2);
+        pointX = e.clientX - xs * scale;
+        pointY = e.clientY - ys * scale;
+        setTransform();
+      }
+    </script>    
+  
+</body>
+</html>

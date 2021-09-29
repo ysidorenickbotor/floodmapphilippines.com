@@ -1,0 +1,1013 @@
+.img{
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 5px;
+  padding: 0;
+}
+.box{
+  margin-left: 400px;
+  background-color: white;
+  border: 10px groove grey;
+  border-radius: 5px;
+  width: 70%;  
+  height: 540px;      
+  overflow: hidden;
+}
+.aside {
+  width: 385px;
+  height: 560px;
+  background-color: white;
+  float: left;
+  margin-left: -10px; 
+  border-radius: 2px; 
+}
+
+.head{
+  width: 100%;
+  height: 70px;
+  background-color: royalblue;  
+  border-radius: 2px;
+  margin-top: -30px;
+
+}
+p.update { 
+  color: white;
+  font-family: Arial Narrow;
+  font-size: 30px;
+  padding: 18px 18px;
+}
+form.example input[type=text] {
+  padding: 5px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 65%;
+  background: #f1f1f1;
+}
+
+
+form.example button {
+  float: left;
+  width: 23%;
+  padding: 5px;
+  background: darkgrey;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  margin-left: 0;
+}
+
+form.example button:hover {
+  background: grey;
+}
+#zoomtext {
+      transform: scale(1);
+      transition: transform 0.2s ease-in-out;
+    }
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+#zoom {
+  width: 100%;
+  height: 100%;
+  transform-origin: 0px 0px;
+  transform: scale(1) translate(0px, 0px);
+  cursor: grab;
+}
+div#zoom > img {
+  width: 100%;
+  height: auto;
+}
+
+.marker1 {
+  margin-top: -1820px; 
+  width: 50px;
+  height: 50px;
+}
+.marker2 {
+  margin-top: 200px; 
+  width: 50px;
+  height: 50px;
+}
+.marker3 {
+  margin-top: 10px; 
+  margin-left: 200px; 
+  width: 50px;
+  height: 50px;
+}
+.marker4 {
+  margin-top: 300px; 
+  margin-left: 200px; 
+  width: 10px;
+  height: 10px;
+}
+.marker5 {
+  margin-top: 100px; 
+  margin-left: 100px; 
+  width: 10px;
+  height: 10px;
+}
+
+.ITBAYAT-BATANES {
+  background-color: inherit;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:lightblue; 
+  margin-left: 531px; 
+  margin-top: 240px;
+}
+.ITBAYAT-BATANES:hover {
+  background-color: whitesmoke;
+  color: lightblue;
+  opacity: 0.8;
+}
+.BASCO-BATANES {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 544px; 
+  margin-top: 3px;
+}
+.BASCO-BATANES:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.CALAYAN-CAGAYAN {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 497px; 
+  margin-top: 80px;
+}
+.CALAYAN-CAGAYAN:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.APARRI-CAGAYAN {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 514px; 
+  margin-top: 72px;
+}
+.APARRI-CAGAYAN:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.LAOAGCITY-ILOCOSNORTE {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 413px; 
+  margin-top: 253px;
+}
+.LAOAGCITY-ILOCOSNORTE:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.SINAIT-ILOCOSSUR {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 402px; 
+  margin-top: -10px;
+}
+.SINAIT-ILOCOSSUR:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.TUGUEGARAO-CAGAYAN {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 523px; 
+  margin-top: 50px;
+}
+.TUGUEGARAO-CAGAYAN:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.BAGUIOCITY-BENGUET {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 210px; 
+  margin-top: 363px;
+}
+.BAGUIOCITY-BENGUET:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.DAGUPANCITY-PANGASINAN {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 183px; 
+  margin-top: 8px;
+}
+.DAGUPANCITY-PANGASINAN:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.CASIGURAN-AURORA {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 553px; 
+  margin-top: 90px;
+}
+.CASIGURAN-AURORA:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.BALER-AURORA {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 496px; 
+  margin-top: 21px;
+}
+.BALER-AURORA:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+
+.CABANATUAN-NUEVAECIJA {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 442px; 
+  margin-top: 8px;
+}
+.CABANATUAN-NUEVAECIJA:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.IBA-ZAMBALES {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 148px; 
+  margin-top: 31px;
+}
+.IBA-ZAMBALES:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.CLARKAIRPORT-PAMPAMGA {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 408px; 
+  margin-top: -4px;
+}
+.CLARKAIRPORT-PAMPAMGA:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.SUBICBAY-OLONGAPO {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 378px; 
+  margin-top: 270px;
+}
+.SUBICBAY-OLONGAPO:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.INFANTA-QUEZON {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 300px; 
+  margin-top: 30px;
+}
+.INFANTA-QUEZON:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.SCIENCEGARDEN-QUEZONCITY {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 450px; 
+  margin-top: 21px;
+}
+.SCIENCEGARDEN-QUEZONCITY:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.PORTAREA-MANILA {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 440px; 
+  margin-top: -5px;
+}
+.PORTAREA-MANILA:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.NAIA-PASAYCITY {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 251px; 
+  margin-top: -2px;
+}
+.NAIA-PASAYCITY:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.SANGLEYPOINT-CAVITE {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 433px; 
+  margin-top: -3px;
+}
+.SANGLEYPOINT-CAVITE:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.TANAY-RIZAL {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 280px; 
+  margin-top: 183px;
+}
+.TANAY-RIZAL:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.AMBULONG-BATANGAS {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 444px; 
+  margin-top: 22px;
+}
+.AMBULONG-BATANGAS:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.ALABAT-QUEZON {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 338px; 
+  margin-top: 19px;
+}
+.ALABAT-QUEZON:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.DAET-CAMARINESNORTE {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 520px; 
+  margin-top: 117px;
+}
+.DAET-CAMARINESNORTE:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.TAYABAS-QUEZON {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 398px; 
+  margin-top: -25px;
+}
+.TAYABAS-QUEZON:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.VIRAC-CATANDUANES {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 752px; 
+  margin-top: 15px;
+}
+.VIRAC-CATANDUANES:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.CALAPAN-ORIENTALMINDORO {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 258px; 
+  margin-top: 81px;
+}
+.CALAPAN-ORIENTALMINDORO:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.VIRAC-CATANDUANES {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 750px; 
+  margin-top: 20px;
+}
+.VIRAC-CATANDUANES:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.LEGASPICITY-ALBAY {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 497px; 
+  margin-top: 70px;
+}
+.LEGASPICITY-ALBAY:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.JUBAN-SORSOGON {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 627px; 
+  margin-top: 67px;
+}
+.JUBAN-SORSOGON:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.ROMBLON-ROMBLON {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 560px; 
+  margin-top: 150px;
+}
+.ROMBLON-ROMBLON:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.CATARMAN-NORTHERNSAMAR {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 783px; 
+  margin-top: 77px;
+}
+.CATARMAN-NORTHERNSAMAR:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.MASBATE-MASBATE {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 486px; 
+  margin-top: 70px;
+}
+.MASBATE-MASBATE:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.SANJOSE-MINDORO {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 244px; 
+  margin-top: 45px;
+}
+.SANJOSE-MINDORO:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.CORON-PALAWAN {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 268px; 
+  margin-top: 67px;
+}
+.CORON-PALAWAN:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.CATBALOGAN-WESTERNSAMAR {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 809px; 
+  margin-top: 48px;
+}
+.CATBALOGAN-WESTERNSAMAR:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.BORONGAN-EASTERNSAMAR {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 855px; 
+  margin-top: 55px;
+}
+.BORONGAN-EASTERNSAMAR:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.ROXASCITY-CAPIZ {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 401px; 
+  margin-top: 50px;
+}
+.ROXASCITY-CAPIZ:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.TACLOBANCITY-LEYTE {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 609px; 
+  margin-top: 74px;
+}
+.TACLOBANCITY-LEYTE:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.GUIUAN-EASTERNSAMAR {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 786px; 
+  margin-top: 64px;
+}
+.GUIUAN-EASTERNSAMAR:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.CUYO-PALAWAN {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 440px; 
+  margin-top: 58px;
+}
+.CUYO-PALAWAN:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.MACTANAIRPORT-CEBU {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 714px; 
+  margin-top: 100px;
+}
+.MACTANAIRPORT-CEBU:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.MAASIN-SOUTHERNLEYTE {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 603px; 
+  margin-top: 111px;
+}
+.MAASIN-SOUTHERNLEYTE:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.SURIGAO-SURIGAODELNORTE {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 662px; 
+  margin-top: 124px;
+}
+.SURIGAO-SURIGAODELNORTE:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.PUERTOPRINCESA-PALAWAN {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 125px; 
+  margin-top: 100px;
+}
+.PUERTOPRINCESA-PALAWAN:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.DAUIS-BOHOL {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 698px; 
+  margin-top: 97px;
+}
+.DAUIS-BOHOL:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.DUMAGUETECITY-NEGROSOR {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 649px; 
+  margin-top: 71px;
+}
+.DUMAGUETECITY-NEGROSOR:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.BUTUANCITY-AGUSANDELNORTE {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 654px; 
+  margin-top: 88px;
+}
+.BUTUANCITY-AGUSANDELNORTE:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.DIPOLOG-ZAMBOANGADELNORTE {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 451px; 
+  margin-top: 95px;
+}
+.DIPOLOG-ZAMBOANGADELNORTE:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.ELSALVADORCITY-MISAMISOR {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 668px; 
+  margin-top: 85px;
+}
+.ELSALVADORCITY-MISAMISOR:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.HINATUAN-SURIGAODELSUR {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 935px; 
+  margin-top: 90px;
+}
+.HINATUAN-SURIGAODELSUR:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.MALAYBALAY-BUKIDNON {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 822px; 
+  margin-top: 78px;
+}
+.MALAYBALAY-BUKIDNON:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.COTABATOCITY-MAGUINDANAO {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 533px; 
+  margin-top: 141px;
+}
+.COTABATOCITY-MAGUINDANAO:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.DAVAOCITY-DAVAODELSUR {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 663px; 
+  margin-top: 110px;
+}
+.DAVAOCITY-DAVAODELSUR:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.ZAMBOANGA-ZAMBOANGADELSUR {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 433px; 
+  margin-top: 132px;
+}
+.ZAMBOANGA-ZAMBOANGADELSUR:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}
+.GENERALSANTOS-STCOTABATO {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  padding: 0px 7px;
+  cursor: pointer;
+  font-size:25px;
+  color:red; 
+  margin-left: 828px; 
+  margin-top: 192px;
+}
+.GENERALSANTOS-STCOTABATO:hover {
+  background-color: whitesmoke;
+  color: red;
+  opacity: 0.8;
+}

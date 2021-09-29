@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.css" />
+  <link rel="icon" href="images.png" type="image/png">
+  <title>Flood Prediction PH</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mapping.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+</head>
+
+<style>
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888; 
+    }
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+    }
+</style>
+
+<body class="home">
+	<ul class = "home">
+    <img src="Floodmap.jpg" class="head-img" href="Website.html">
+    <li>COMPUTER-SCIENCE.com</li>
+    <li><a class="fa fa-home" href="Website.html"> Home </a></li>
+    <li><a class="fa fa-phone" href="Contact.html"> Contact</a></li>
+    <li><a class="fa fa-info" href="About.html"> About </a></li> 
+    <a class="fa fa-user-circle fa-2x" style="margin-left: 710px; margin-top: 5px; padding-left: 7px; cursor: pointer" onclick="openForm()"></a>
+  
+    <button class="button" onclick="openForm()">Login </button>
+    <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+      
+
+      <li><label for="email"><b>Email</b></label></li>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <li><label for="psw"><b>Password</b></label></li>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit" class="btn">Login</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+  </ul>
+
+  <ul class = "home1">
+    <img src="logo.png" class="cspc">
+    <div class="dropdown">
+      <button class="dropbtn1">MORE 
+      <i class="fa fa-caret-down"></i>
+      </button>
+      
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn1">MORE 
+      <i class="fa fa-caret-down"></i>
+      </button>
+      
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn1">MORE 
+      <i class="fa fa-caret-down"></i>
+      </button>
+      
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn1">MORE 
+      <i class="fa fa-caret-down"></i>
+      </button>
+     
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn1">MORE 
+      <i class="fa fa-caret-down"></i>
+      </button>
+     
+    </div> 
+    <div class="dropdown">
+      <button class="dropbtn1">MORE 
+      <i class="fa fa-caret-down"></i>
+      </button>
+     
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn1">MORE 
+      <i class="fa fa-caret-down"></i>
+      </button>
+     
+    </div>
+    
+    <aside style="height: 86px; width:253px; background-color: white; border: 2px solid blue; float: right;margin-right: 20px; margin-top: -3px">
+    <div style="text-align:center; margin-top: -36px; padding:1em 0;"><h3><a style="text-decoration:none;"><span style="color:black; font-size: 16px">Philippine Standard Time</span></h3> <iframe style="margin-top: -30px;"src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Asia%2FManila" width="100%" height="90" frameborder="0" seamless ></iframe> </div>
+    </aside>
+  </ul>
+
+  <br><br><br><br><br><br><br><br>
+  <div class ="paaa">
+    <b><p class = "p">About</p></b>
+  </div>
+  
+  <div class="about">
+    <b><p class="intro">Introduction</p></b>
+    <p class = "introduction">Floods can harm society, the economy, and the environment in many places of the world. Every year, over 21 million people are affected by river floods around the world (Luo et al., 2015). Because of their vulnerability to the occurrence of floods, the effects of floods are more severe in developing or low-income countries. </p>
+    <p class = "introduction">The majority of Southeast Asia's cities are situated in low-lying locations along the banks of large river systems, which are frequently flooded. The capitals of Hanoi, Jakarta, Kuala Lumpur, Bangkok, and Manila is located on river deltas such as the Red River in Vietnam, the Ciliwung River in Indonesia, the Gumbak-Klang-Batu Rivers in Malaysia, the Chao Praya River in Bangkok, and the Pasig-Marikina Rivers in the Philippines (Philippines). River systems frequently meander across cities. For millennia, these Southeast Asian rivers have flooded vast swaths of land, and their vast flood plains and deltas are well-known for severe floods. </p> 
+    <p class = "introduction">The Philippines is vulnerable to tropical cyclones and low-pressure zones due to its geographic location. According to the survey, the Philippines is one of the most flood-prone countries in the world. Over 60 significant floods have been observed in the Philippines in the last ten years. Tropical cyclones regularly pass across the Philippines. An average of twenty tropical cyclones pass through the Philippine Area of Responsibility each year, with seven to eight of them hitting the country directly, causing massive water-related damage to people and property. Approximately 1,000 people are killed or missing each year as a result of flooding caused by cyclones, according to reports from the Office of Civil Defense. With more than 16 percent of the population living in poverty, the Philippines has a pretty high poverty rate. About 17.6 million Filipinos are unable to buy essentials due to the large number of individuals who rely on agriculture for a living and wealth inequality. Between 2015 and 2020, poverty fell from 21.6 percent to 16.6 percent. During flood seasons, many Filipinos become homeless and lose their employment. Flooding produces a slew of issues, including a lack of food and safe drinking water. Sanitation and hygiene are both in jeopardy. Flooding increases, the incidence of many waterborne and infectious diseases. </p>
+    <p class = "introduction">Natural disasters in the Philippines killed over 23,000 people and affected 125 million people between 2016 and 2019, according to the Asian Development Bank Institute (ADBI). The resulting socio-economic harm was estimated to be at $20 billion, with an annual average of $1.2 billion. The country's long-term human and economic costs from typhoons are substantially higher: Long-term losses outweighed acute losses during a 25-year timeframe. Damage to public infrastructure has a detrimental impact on a large number of individuals, both directly and indirectly. Damage to roads, bridges, cars, and transportation networks can have a significant impact on the local and national economies.  </p>
+    <p class = "introduction">Floods alone cost the country more than a million dollars each year on average.  A lot of studies try to eliminate the effects of a flood by reducing their severity with good flood control. To manage floods successfully and efficiently, it is critical to be able to forecast the flood first. The researcher employed a machine learning method known as k-Nearest Neighbors in this investigation (k-NN). The characteristics employed in this study have a wide range of values, the problem is solved using a scaling function called z-score normalization. </p>
+    <p class = "introduction">According to Han et.al (2021), The K-Nearest Neighbor model, as one of the machine learning models prediction that can forecast climate using historical weather data from an area, such as rain, wind speed, dew point, temperature, and so on. K-nearest neighbor (KNN) algorithm will provide robustness to the irregular class distribution of the precipitation dataset and achieved good results in precipitation forecasting. They did not, however, compare it to other advanced machine learning algorithms like deep learning, which limits its application to rainfall forecasting. To avoid uncertainties caused by modeling inaccuracies, researchers developed an ensemble k-NN forecasting approach based on historical samples. Water extraction, storage, and flood control systems, among other human involvement, will alter the travel time and severity of extreme discharges, as well as the flow time sequence. In connection with that, the kNN algorithm can use in Flood prediction because of its simplicity, the K-Nearest Neighbors Algorithm or (KNN) is one of the most widely used learning algorithms. Even if the climate is unpredictable and there’s a lot of environmental changes due to human involvement or not, it could be one of the tools in predicting flood since the k-NN algorithm is proven as a climate prediction.  </p>
+    <p class = "introduction">Consequently, the k-NN calculation will be apply consciously given by the Philippines to survey its capacity in anticipating floods. This study is coordinate inside the accompanying way: (a) to give a top to-the-bottom portrayal of the investigation territory yet because the information preprocesses, (b) to represent the k-NN model, the trial plan, and hence the determination of boundaries for preparing, (c) and to present the model outcome and the standard results, trailed by which talks about the ramifications of the outcomes.</p>
+    <b><p class="back">Background</p></b>
+    <p class = "background">Flood prediction system can be defined as a process of estimating and predicting the magnitude, timing and duration of flooding based on known characteristics of a water, with the aim to prevent damages to human life, to properties, and to environment. The flood prediction system will show a result of flood forecasting, flood control managers that can accurately predict when local flooding is likely to occur. </p>
+    <p class = "background">For flood prediction we need the data of rainfall, temperature and relative humidity of the certain place and using this data we can build a machine learning model to predict flood and drought. </p>
+    <p class = "background">As floods occur in a relatively short span of time, droughts do not occur with just no rainfall in one day. It is more of a monthly analysis. Where there is little or no rainfall for an extended period of time. Therefore, it was more suitable to take daily data to predict the same. To predict the condition of one particular day, we need to know the weather conditions of that place in the past. </p>
+  </div>
+
+  <script>
+    function openForm() {
+    document.getElementById("myForm").style.display = "block";
+    }
+    function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+    }
+  </script>
+
+  <footer>
+    <p class ="foot">Acknowledgement :D </p>
+    <p class ="foot">BSCS 4A Website 2021</p>
+  </footer>
+</body>
+</html>
